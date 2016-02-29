@@ -23,13 +23,16 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
+     auto-completion
+     better-defaults
      emacs-lisp
      git
+     github
+     shell-scripts
      clojure
      javascript
      markdown
+     html
      org
      (shell :variables
             shell-default-height 30
@@ -42,7 +45,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(paredit)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
