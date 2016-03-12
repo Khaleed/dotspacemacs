@@ -24,7 +24,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     better-defaults
      emacs-lisp
      git
      github
@@ -34,12 +33,15 @@ values."
      markdown
      html
      org
+     themes-megapack
      (shell :variables
             shell-default-height 30
              shell-default-position 'bottom)
      spell-checking
      syntax-checking
      version-control
+     finance
+     osx
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -238,14 +240,12 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put almost any
 user code here.  The exception is org related code, which should be placed in
-`dotspacemacs/user-config'."
+`dotspacemacs/user-config'."""
   )
-
-(defun dotspacemacs/user-config ()
-  "Configuration function for user code.
+(defun dotspacemacs/user-config () "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+  (global-linum-mode)
   )
-
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
