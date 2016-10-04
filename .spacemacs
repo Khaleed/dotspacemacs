@@ -31,6 +31,8 @@ values."
      clojure
      javascript
      python
+     elm
+     haskell
      markdown
      html
      org
@@ -44,6 +46,7 @@ values."
      version-control
      finance
      osx
+     dash
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
