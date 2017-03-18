@@ -31,21 +31,28 @@ values."
      clojure
      javascript
      python
+     racket
      markdown
      haskell
      html
-     org
+     (org :variables
+          org-enable-github-support t
+          )
      react
      themes-megapack
      (shell :variables
             shell-default-height 30
-            shell-default-position 'bottom)
+            shell-default-position 'bottom
+            shell-default-shell 'eshell)
      spell-checking
      syntax-checking
      version-control
+     evil-commentary
      finance
      osx
      dash
+     yaml
+     chrome
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -255,6 +262,9 @@ This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
        (global-linum-mode)
        (evil-set-initial-state 'term-mode 'emacs)
+       ;; Remove fly-spell for markdown and text-files.
+       (remove-hook 'text-mode-hook 'enable-flyspell-mode)
+       (remove-hook 'markdown-mode-hook 'enable-flyspell-mode)
        )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
