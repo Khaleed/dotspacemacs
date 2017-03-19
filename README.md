@@ -33,4 +33,4 @@ For further instructions, please refer to the Spacemacs [documentation](http://s
 
 dotspacemacs is released under the The [MIT](https://opensource.org/licenses/MIT) License.
 
-![This is a screenshot of Spacemacs](https://github.com/Khaleed/dotspacemacs/public/spacemacs.png)
+![This is a screenshot of Spacemacs](https://github.com/Khaleed/dotspacemacs/blob/master/public/spacemacs.png)
