@@ -1,5 +1,7 @@
 # dotspacemacs
 
+![This is a screenshot of Spacemacs](https://github.com/Khaleed/dotspacemacs/blob/master/public/spacemacs.png)
+
 ## Motivation
 
 Version control a spacemacs configuration file that avoids over-tooling.
@@ -33,4 +35,3 @@ For further instructions, please refer to the Spacemacs [documentation](http://s
 
 dotspacemacs is released under the The [MIT](https://opensource.org/licenses/MIT) License.
 
-![This is a screenshot of Spacemacs](https://github.com/Khaleed/dotspacemacs/blob/master/public/spacemacs.png)
