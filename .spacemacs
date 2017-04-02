@@ -58,7 +58,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(tern-auto-complete)
+   dotspacemacs-additional-packages '(tern-auto-complete magithub)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(evil-unimpaired persp-mode)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -265,6 +265,9 @@ layers configuration. You are free to put any user code."
        ;; Remove fly-spell for markdown and text-files.
        (remove-hook 'text-mode-hook 'enable-flyspell-mode)
        (remove-hook 'markdown-mode-hook 'enable-flyspell-mode)
+       (use-package magithub
+         :after magit
+         :config (magithub-feature-autoinject t))
        )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
