@@ -44,7 +44,7 @@ values."
             shell-default-height 30
             shell-default-position 'bottom
             shell-default-shell 'eshell)
-     spell-checking
+     (spell-checking :variables spell-checking-enabled-by-default nil)
      syntax-checking
      version-control
      evil-commentary
