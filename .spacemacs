@@ -53,6 +53,7 @@ values."
      dash
      yaml
      chrome
+     helm
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -256,6 +257,7 @@ user code here.  The exception is org related code, which should be placed in
 `dotspacemacs/user-config'."""
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+(setq-default git-magit-status-fullscreen t)
 )
 (defun dotspacemacs/user-config () "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
