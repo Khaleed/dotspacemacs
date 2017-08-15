@@ -59,7 +59,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(tern-auto-complete magithub)
+   dotspacemacs-additional-packages '(tern-auto-complete magithub jade-mode)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '(evil-unimpaired persp-mode)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
