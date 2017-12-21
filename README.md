@@ -35,5 +35,5 @@ For further instructions, please refer to the Spacemacs [documentation](http://s
 
 © Khalid, 2017
 
-dotspacemacs is released under the The [Apache 2.0](https://opensource.org/licenses/Apache-2.0) License.
+dotspacemacs is released under the [Apache 2.0](https://opensource.org/licenses/Apache-2.0) License.
 
